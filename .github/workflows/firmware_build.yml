@@ -24,7 +24,7 @@ jobs:
         run: make
 
       - name: Upload Artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: pcan_firmware
           path: |
@@ -32,7 +32,7 @@ jobs:
             build-*/*.bin
 
       - name: Download Artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
 
       - name: Display structure of downloaded files
         run: ls -R pcan_firmware/
