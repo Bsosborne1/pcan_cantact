@@ -157,7 +157,7 @@ ollie:
 	$(MAKE) BOARD=ollie DEBUG=0 OPT=-Os BOARD_FLAGS='-DHSE_VALUE=0' elf hex bin
 
 sh_c30a:
-	$(MAKE) BOARD=sh_c30a DEBUG=0 OPT=-Os BOARD_FLAGS='-DHSE_VALUE=0' elf hex bin
+	$(MAKE) BOARD=sh_c30a DEBUG=0 OPT=-Os BOARD_FLAGS='-DHSE_VALUE=24000000' elf hex bin
 
 #######################################
 # build the application
